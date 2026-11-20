@@ -1,0 +1,20 @@
+:root{--ink:#10243a;--paper:#fbfaf6;--line:#10243a;--accent:#ffd23f;--bad:#a4161a;color-scheme:light dark}
+@media (prefers-color-scheme:dark){:root{--ink:#f4f1e8;--paper:#0e1b2a;--line:#f4f1e8;--bad:#ff8a8d}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:1.125rem/1.6 "Atkinson Hyperlegible",Verdana,system-ui,sans-serif}
+header{background:#10243a;color:#fbfaf6;padding:1.25rem 1rem;border-bottom:6px solid var(--accent)}
+h1{margin:0;font-size:1.6rem}header p{margin:.25rem 0 0}
+main{max-width:42rem;margin:0 auto;padding:1rem}
+h2{font-size:1.3rem;margin:1.75rem 0 .5rem}
+label{display:block;font-weight:700;margin-top:.75rem}
+select,button{font:inherit;min-height:48px;width:100%;padding:.5rem .75rem;border:2px solid var(--line);border-radius:6px;background:var(--paper);color:var(--ink)}
+fieldset{border:2px solid var(--line);border-radius:6px;margin:1rem 0;padding:.25rem .75rem .5rem}
+.opt{display:flex;gap:.75rem;align-items:center;font-weight:400;min-height:48px}
+input[type=radio]{width:24px;height:24px}
+button{cursor:pointer;font-weight:700;margin-top:.5rem}
+button.primary{background:var(--accent);color:#10243a;border-color:#10243a}
+:focus-visible{outline:4px solid #2b6fff;outline-offset:3px}
+ol{padding-left:1.5rem}li{margin-bottom:.75rem}
+#lifts{list-style:none;padding:0}#lifts li{border:2px solid var(--line);border-radius:6px;padding:.75rem}
+#lifts strong{color:var(--bad)}
+.live{font-weight:700;min-height:1.5em}
